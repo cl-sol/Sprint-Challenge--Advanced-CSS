@@ -1,1 +1,39 @@
 // Navigation code here
+
+.navigation-bar {
+    border: 1px solid @sea-shell;
+    .flex-column();
+    align-items: center;
+    background-color: @wild-sand;
+
+    .website-name {
+        font-size: 3rem;
+        justify-content: center;
+        width: 18%;
+
+        @media @phone {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        margin-top: 1%;
+
+        @media @phone {
+            width: 90%;
+            margin: 1% 5%;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: @river-bend;
+            color: black;
+        }
+    }
+}

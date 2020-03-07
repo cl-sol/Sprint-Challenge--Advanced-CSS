@@ -1,1 +1,28 @@
 // Mixins Here
+
+.sign-up-button(@w, @h) {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: @btn-bg-color;
+    color: white;
+    width: @w;
+    height: @h;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.25%;
+}
+
+.img-hw() {
+    width: 100%;
+    height: auto;
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
